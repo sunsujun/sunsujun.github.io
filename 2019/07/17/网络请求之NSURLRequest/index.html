@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="我大刀又又又又又又又又又又又又又又又又又又又又又又又又又来了">
+<meta name="description" content="BG&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在网络编程过程中无论是 NSURLSession 还是 NSURLConnection，其其网络请求都是通过 NSURLRequest 进行发起的，这里主要讲讲 NSURLRequest 的用法及其属性设置 NSURLRequest中常用方法及属性&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp; NSURLRequest 除了在创建时可以设置一些">
 <meta name="keywords" content="iOS 开发，宅">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大刀又来了">
-<meta property="og:url" content="http://sunsujun.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络请求之NSURLRequest">
+<meta property="og:url" content="http://sunsujun.com/2019/07/17/网络请求之NSURLRequest/index.html">
 <meta property="og:site_name" content="大刀又来了">
-<meta property="og:description" content="我大刀又又又又又又又又又又又又又又又又又又又又又又又又又来了">
+<meta property="og:description" content="BG&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在网络编程过程中无论是 NSURLSession 还是 NSURLConnection，其其网络请求都是通过 NSURLRequest 进行发起的，这里主要讲讲 NSURLRequest 的用法及其属性设置 NSURLRequest中常用方法及属性&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp; NSURLRequest 除了在创建时可以设置一些">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-18T07:34:40.907Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大刀又来了">
-<meta name="twitter:description" content="我大刀又又又又又又又又又又又又又又又又又又又又又又又又又来了">
+<meta name="twitter:title" content="网络请求之NSURLRequest">
+<meta name="twitter:description" content="BG&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;在网络编程过程中无论是 NSURLSession 还是 NSURLConnection，其其网络请求都是通过 NSURLRequest 进行发起的，这里主要讲讲 NSURLRequest 的用法及其属性设置 NSURLRequest中常用方法及属性&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp; NSURLRequest 除了在创建时可以设置一些">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://sunsujun.com/">
+  <link rel="canonical" href="http://sunsujun.com/2019/07/17/网络请求之NSURLRequest/">
 
 
 
 
 
-  <title>大刀又来了</title>
+  <title>网络请求之NSURLRequest | 大刀又来了</title>
   
 
 
@@ -144,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -238,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -270,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/17/网络请求之NSURLRequest/" itemprop="url">网络请求之NSURLRequest</a></h1>
+          <h1 class="post-title" itemprop="name headline">网络请求之NSURLRequest</h1>
         
 
         <div class="post-meta">
@@ -322,9 +320,7 @@
       
 
       
-        
-          
-            <h3 id="BG"><a href="#BG" class="headerlink" title="BG"></a>BG</h3><p>&ensp;&ensp;&ensp;&ensp;在网络编程过程中无论是 NSURLSession 还是 NSURLConnection，其其网络请求都是通过 NSURLRequest 进行发起的，这里主要讲讲 NSURLRequest 的用法及其属性设置</p>
+        <h3 id="BG"><a href="#BG" class="headerlink" title="BG"></a>BG</h3><p>&ensp;&ensp;&ensp;&ensp;在网络编程过程中无论是 NSURLSession 还是 NSURLConnection，其其网络请求都是通过 NSURLRequest 进行发起的，这里主要讲讲 NSURLRequest 的用法及其属性设置</p>
 <h3 id="NSURLRequest中常用方法及属性"><a href="#NSURLRequest中常用方法及属性" class="headerlink" title="NSURLRequest中常用方法及属性"></a>NSURLRequest中常用方法及属性</h3><p>&ensp;&ensp;&ensp;&ensp; NSURLRequest 除了在创建时可以设置一些属性，当创建完成时，大部分属性都为只读属性，无法设置与修改，如果想修改则可以使用NSMutableURLRequest</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// request 缓存策略</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">NS_ENUM</span>(<span class="built_in">NSUInteger</span>, <span class="built_in">NSURLRequestCachePolicy</span>) &#123;</span><br><span class="line"><span class="comment">// 默认缓存策略,具体的工作:如果一个 NSCachedURLResponse 对于请求不存在，数据将会从源端获取，如果请求拥有一个缓存的响应，那么 URL 加载系统会检查这个响应来决定，如果它指定内容必须重新生效的话，加入内容必须重新生效，将建立一个连向源端的连接，来查看内容是否发生变化，如果没有发生变化，那么响应就从本地缓存返回数据，如果内容发生变化m，那么数据将从源端获取</span></span><br><span class="line"><span class="built_in">NSURLRequestUseProtocolCachePolicy</span> = <span class="number">0</span>,</span><br><span class="line"><span class="comment">// URL每次加载数据都是从源端获取，不使用本地缓存数据</span></span><br><span class="line"><span class="built_in">NSURLRequestReloadIgnoringLocalCacheData</span> = <span class="number">1</span>,</span><br><span class="line"><span class="comment">// 不仅忽略本地缓存，同时也忽略代理服务器或其他中间介质目前已有的、协议允许的缓存。</span></span><br><span class="line"><span class="built_in">NSURLRequestReloadIgnoringLocalAndRemoteCacheData</span> = <span class="number">4</span>, <span class="comment">// Unimplemented</span></span><br><span class="line"><span class="comment">// 同NSURLRequestReloadIgnoringLocalCacheData</span></span><br><span class="line"><span class="built_in">NSURLRequestReloadIgnoringCacheData</span> = <span class="built_in">NSURLRequestReloadIgnoringLocalCacheData</span>,</span><br><span class="line"><span class="comment">// 先检查缓存 如果没有缓存再进行请求</span></span><br><span class="line"><span class="built_in">NSURLRequestReturnCacheDataElseLoad</span> = <span class="number">2</span>,</span><br><span class="line"><span class="comment">// 类似离线模式，只读缓存 无论有无缓存都不进行请求,指定已存的缓存数据用来满足请求，不管生命时长和过期时间。如果在缓存中没有已存数据来响应URL加载请求的话，不去尝试从源段加载数据，此时认为加载请求失败。</span></span><br><span class="line"><span class="built_in">NSURLRequestReturnCacheDataDontLoad</span> = <span class="number">3</span>,</span><br><span class="line"><span class="comment">// 指定如果已存的缓存数据被提供它的源段确认为有效则允许使用缓存数据响应请求，否则从源段加载数据。</span></span><br><span class="line"><span class="built_in">NSURLRequestReloadRevalidatingCacheData</span> = <span class="number">5</span>, <span class="comment">// Unimplemented</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 网络请求服务类型</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">NS_ENUM</span>(<span class="built_in">NSUInteger</span>, <span class="built_in">NSURLRequestNetworkServiceType</span>)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line"><span class="built_in">NSURLNetworkServiceTypeDefault</span> = <span class="number">0</span>,    <span class="comment">// Standard internet traffic 标准</span></span><br><span class="line"><span class="built_in">NSURLNetworkServiceTypeVoIP</span> = <span class="number">1</span>,    <span class="comment">// Voice over IP control traffic IP 语音</span></span><br><span class="line"><span class="built_in">NSURLNetworkServiceTypeVideo</span> = <span class="number">2</span>,    <span class="comment">// Video traffic 视频</span></span><br><span class="line"><span class="built_in">NSURLNetworkServiceTypeBackground</span> = <span class="number">3</span>, <span class="comment">// Background traffic 后台服务（如文件下载等）</span></span><br><span class="line"><span class="built_in">NSURLNetworkServiceTypeVoice</span> = <span class="number">4</span>,       <span class="comment">// Voice data 语音</span></span><br><span class="line"><span class="built_in">NSURLNetworkServiceTypeResponsiveData</span> = <span class="number">6</span>, <span class="comment">// Responsive data 常用于用户需要快速得到响应的场景，如即时通讯、完成购买活动等，优先级比NSURLNetworkServiceTypeDefault高</span></span><br><span class="line"><span class="built_in">NSURLNetworkServiceTypeCallSignaling</span> API_AVAILABLE(macosx(<span class="number">10.12</span>), ios(<span class="number">10.0</span>), watchos(<span class="number">3.0</span>), tvos(<span class="number">10.0</span>)) = <span class="number">11</span>, <span class="comment">// Call Signaling 呼叫信号</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*! </span></span><br><span class="line"><span class="comment">类方法初始化方法，默认缓存策略为NSURLRequestUseProtocolCachePolicy 请求超时时间为60s</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">+ (<span class="keyword">instancetype</span>)requestWithURL:(<span class="built_in">NSURL</span> *)URL;</span><br><span class="line"></span><br><span class="line"><span class="comment">//是否支持安全编码</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">class</span>, <span class="keyword">readonly</span>) <span class="built_in">BOOL</span> supportsSecureCoding;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*! </span></span><br><span class="line"><span class="comment">类方法初始化方法，创建时可以设置缓存策略和请求超时时长</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">+ (<span class="keyword">instancetype</span>)requestWithURL:(<span class="built_in">NSURL</span> *)URL cachePolicy:(<span class="built_in">NSURLRequestCachePolicy</span>)cachePolicy timeoutInterval:(<span class="built_in">NSTimeInterval</span>)timeoutInterval;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*! </span></span><br><span class="line"><span class="comment">init初始化方法，默认缓存策略为NSURLRequestUseProtocolCachePolicy 请求超时时间为60s</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">- (<span class="keyword">instancetype</span>)initWithURL:(<span class="built_in">NSURL</span> *)URL;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*! </span></span><br><span class="line"><span class="comment">init初始化方法，创建时可以设置缓存策略和请求超时时长</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">- (<span class="keyword">instancetype</span>)initWithURL:(<span class="built_in">NSURL</span> *)URL cachePolicy:(<span class="built_in">NSURLRequestCachePolicy</span>)cachePolicy timeoutInterval:(<span class="built_in">NSTimeInterval</span>)timeoutInterval <span class="built_in">NS_DESIGNATED_INITIALIZER</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*! </span></span><br><span class="line"><span class="comment">只读，获取请求对象 URL</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nullable</span>, <span class="keyword">readonly</span>, <span class="keyword">copy</span>) <span class="built_in">NSURL</span> *URL;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*! </span></span><br><span class="line"><span class="comment">只读，获取请求对象缓存策略</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>) <span class="built_in">NSURLRequestCachePolicy</span> cachePolicy;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*! </span></span><br><span class="line"><span class="comment">只读，获取请求对象超时时间 </span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>) <span class="built_in">NSTimeInterval</span> timeoutInterval;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*!</span></span><br><span class="line"><span class="comment">只读，获取请求主文档地址,用来存放缓存</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nullable</span>, <span class="keyword">readonly</span>, <span class="keyword">copy</span>) <span class="built_in">NSURL</span> *mainDocumentURL;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*!</span></span><br><span class="line"><span class="comment">获取网络请求的服务类型</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>) <span class="built_in">NSURLRequestNetworkServiceType</span> networkServiceType API_AVAILABLE(macos(<span class="number">10.7</span>), ios(<span class="number">4.0</span>), watchos(<span class="number">2.0</span>), tvos(<span class="number">9.0</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">/*!</span></span><br><span class="line"><span class="comment">是否允许使用服务商蜂窝网络</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>) <span class="built_in">BOOL</span> allowsCellularAccess  API_AVAILABLE(macos(<span class="number">10.8</span>), ios(<span class="number">6.0</span>), watchos(<span class="number">2.0</span>), tvos(<span class="number">9.0</span>));</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
 
@@ -339,8 +335,6 @@
 <li><a href="https://my.oschina.net/u/2340880/blog/620225" target="_blank" rel="noopener">请求类NSURLRequest使用详解</a></li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -357,156 +351,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sunsujun.com/2019/07/16/week-29/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sujun.sun">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="大刀又来了">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/16/week-29/" itemprop="url">一周阅读 -【2019-29】</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-16T14:10:01+08:00">
-                2019-07-16
-              </time>
+              <a href="/2019/07/16/week-29/" rel="next" title="一周阅读 -【2019-29】">
+                <i class="fa fa-chevron-left"></i> 一周阅读 -【2019-29】
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/一周阅读/" itemprop="url" rel="index">
-                    <span itemprop="name">一周阅读</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <ul>
-<li><a href="https://github.com/Draveness/analyze/blob/master/contents/OHHTTPStubs/iOS%20%E5%BC%80%E5%8F%91%E4%B8%AD%E4%BD%BF%E7%94%A8%20NSURLProtocol%20%E6%8B%A6%E6%88%AA%20HTTP%20%E8%AF%B7%E6%B1%82.md" target="_blank" rel="noopener">iOS 开发中使用 NSURLProtocol 拦截 HTTP 请求</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -516,318 +382,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sunsujun.com/2019/07/09/Hexo常用命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sujun.sun">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="大刀又来了">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/09/Hexo常用命令/" itemprop="url">Hexo常用命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-09T15:00:36+08:00">
-                2019-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener"><font color="#2196F3" size="5" face="宋体">跳转官方文档</font></a></p>
-<table>
-<thead>
-<tr>
-<th>原始命令</th>
-<th>缩写</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>hexo new “postName”</td>
-<td>hexo n “postName”</td>
-<td>新建文章</td>
-</tr>
-<tr>
-<td>hexo new page “pageName”</td>
-<td></td>
-<td>新建页面</td>
-</tr>
-<tr>
-<td>hexo server</td>
-<td>hexo s</td>
-<td>启动服务预览</td>
-</tr>
-<tr>
-<td>hexo generate</td>
-<td>hexo g</td>
-<td>生成静态页面</td>
-</tr>
-<tr>
-<td>hexo deploy</td>
-<td>hexo d</td>
-<td>部署</td>
-</tr>
-<tr>
-<td>hexo clean</td>
-<td></td>
-<td>清理缓存</td>
-</tr>
-<tr>
-<td>hexo g -d</td>
-<td></td>
-<td>生成静态网页并部署，两步并一步</td>
-</tr>
-</tbody></table>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sunsujun.com/2019/07/09/一周阅读/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sujun.sun">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="大刀又来了">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/09/一周阅读/" itemprop="url">一周阅读 -【2019-28】</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-09T10:50:10+08:00">
-                2019-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/一周阅读/" itemprop="url" rel="index">
-                    <span itemprop="name">一周阅读</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li><a href="https://github.com/aozhimin/iOS-Monitor-Platform#power-consumption" target="_blank" rel="noopener">iOS 性能监控 SDK —— Wedjat（华狄特）开发过程的调研和整理</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -835,6 +394,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -855,8 +418,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -918,6 +490,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#BG"><span class="nav-number">1.</span> <span class="nav-text">BG</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NSURLRequest中常用方法及属性"><span class="nav-number">2.</span> <span class="nav-text">NSURLRequest中常用方法及属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NSMutableURLRequest类中常用方法与属性"><span class="nav-number">3.</span> <span class="nav-text">NSMutableURLRequest类中常用方法与属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NSURLRequest-NSHTTPURLRequest）-常用方法与属性"><span class="nav-number">4.</span> <span class="nav-text">NSURLRequest(NSHTTPURLRequest） 常用方法与属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NSMutableHTTPURLRequest-NSMutableHTTPURLRequest"><span class="nav-number">5.</span> <span class="nav-text">NSMutableHTTPURLRequest(NSMutableHTTPURLRequest)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文章"><span class="nav-number">6.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1051,6 +639,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
