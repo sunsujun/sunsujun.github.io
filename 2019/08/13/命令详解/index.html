@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="week read,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="iOS 性能监控 SDK —— Wedjat（华狄特）开发过程的调研和整理">
-<meta name="keywords" content="week read">
+<meta name="description" content="常用命令   命令编码 说明    pod install 安装，不会更新已经安装的库   pod install –verbose –no-repo-update 作用与pod install一样，但是不会获取更新的pod specs   pod update 在没有指定pod库的版本的情况下，拉取 repo 中最新的版本   pod update xxx 更新指定库   pod update">
+<meta name="keywords" content="iOS 开发，宅">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一周阅读 -【2019-28】">
-<meta property="og:url" content="http://sunsujun.com/2019/07/09/一周阅读/index.html">
+<meta property="og:title" content="cocoapods命令详解">
+<meta property="og:url" content="http://sunsujun.com/2019/08/13/命令详解/index.html">
 <meta property="og:site_name" content="大刀又来了">
-<meta property="og:description" content="iOS 性能监控 SDK —— Wedjat（华狄特）开发过程的调研和整理">
+<meta property="og:description" content="常用命令   命令编码 说明    pod install 安装，不会更新已经安装的库   pod install –verbose –no-repo-update 作用与pod install一样，但是不会获取更新的pod specs   pod update 在没有指定pod库的版本的情况下，拉取 repo 中最新的版本   pod update xxx 更新指定库   pod update">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-16T06:16:31.892Z">
+<meta property="og:updated_time" content="2019-08-13T07:53:44.595Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一周阅读 -【2019-28】">
-<meta name="twitter:description" content="iOS 性能监控 SDK —— Wedjat（华狄特）开发过程的调研和整理">
+<meta name="twitter:title" content="cocoapods命令详解">
+<meta name="twitter:description" content="常用命令   命令编码 说明    pod install 安装，不会更新已经安装的库   pod install –verbose –no-repo-update 作用与pod install一样，但是不会获取更新的pod specs   pod update 在没有指定pod库的版本的情况下，拉取 repo 中最新的版本   pod update xxx 更新指定库   pod update">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://sunsujun.com/2019/07/09/一周阅读/">
+  <link rel="canonical" href="http://sunsujun.com/2019/08/13/命令详解/">
 
 
 
 
 
-  <title>一周阅读 -【2019-28】 | 大刀又来了</title>
+  <title>cocoapods命令详解 | 大刀又来了</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sunsujun.com/2019/07/09/一周阅读/">
+    <link itemprop="mainEntityOfPage" href="http://sunsujun.com/2019/08/13/命令详解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="sujun.sun">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">一周阅读 -【2019-28】</h1>
+          <h1 class="post-title" itemprop="name headline">cocoapods命令详解</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-09T10:50:10+08:00">
-                2019-07-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T14:27:11+08:00">
+                2019-08-13
               </time>
             
 
@@ -292,28 +292,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/一周阅读/" itemprop="url" rel="index">
-                    <span itemprop="name">一周阅读</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -342,9 +320,46 @@
       
 
       
-        <ul>
-<li><a href="https://github.com/aozhimin/iOS-Monitor-Platform#power-consumption" target="_blank" rel="noopener">iOS 性能监控 SDK —— Wedjat（华狄特）开发过程的调研和整理</a></li>
-</ul>
+        <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><table>
+<thead>
+<tr>
+<th>命令编码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pod install</td>
+<td>安装，不会更新已经安装的库</td>
+</tr>
+<tr>
+<td>pod install –verbose –no-repo-update</td>
+<td>作用与pod install一样，但是不会获取更新的pod specs</td>
+</tr>
+<tr>
+<td>pod update</td>
+<td>在没有指定pod库的版本的情况下，拉取 repo 中最新的版本</td>
+</tr>
+<tr>
+<td>pod update xxx</td>
+<td>更新指定库</td>
+</tr>
+<tr>
+<td>pod update –verbose –no-repo-update</td>
+<td>作用与pod update一样，但是不会获取更新的pod specs</td>
+</tr>
+<tr>
+<td>pod repo update</td>
+<td>更新本地仓库</td>
+</tr>
+<tr>
+<td>pod search xxx</td>
+<td>搜索xxx库</td>
+</tr>
+<tr>
+<td>pod –version</td>
+<td>cocoapods 版本号</td>
+</tr>
+</tbody></table>
 
       
     </div>
@@ -360,12 +375,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/week-read/" rel="tag"># week read</a>
-          
-        </div>
-      
 
       
       
@@ -375,15 +384,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/07/17/网络请求之NSURLRequest/" rel="next" title="网络请求之NSURLRequest">
+                <i class="fa fa-chevron-left"></i> 网络请求之NSURLRequest
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/09/Hexo常用命令/" rel="prev" title="Hexo常用命令">
-                Hexo常用命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -435,8 +444,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -498,6 +516,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">1.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
