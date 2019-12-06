@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1234567st=&amp;gt;start: 开始op=&amp;gt;operation: My Operationcond=&amp;gt;condition: Yes or No?e=&amp;gt;endst-&amp;gt;op-&amp;gt;condcond(yes)-&amp;gt;econd(no)-&amp;gt;op">
+<meta name="description" content="···mermaidflowchatst=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]e=&amp;gt;end: End:&amp;gt;http://www.google.comop1=&amp;gt;operation: My Operation|pastop2=&amp;gt;operation: Stuff|currentsub1=&amp;gt;subrouti">
 <meta name="keywords" content="iOS 开发，宅">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ios Universal Links 探究">
 <meta property="og:url" content="http://sunsujun.github.io/2019/12/05/ios-Universal-Links-探究/index.html">
 <meta property="og:site_name" content="大刀又来了">
-<meta property="og:description" content="1234567st=&amp;gt;start: 开始op=&amp;gt;operation: My Operationcond=&amp;gt;condition: Yes or No?e=&amp;gt;endst-&amp;gt;op-&amp;gt;condcond(yes)-&amp;gt;econd(no)-&amp;gt;op">
+<meta property="og:description" content="···mermaidflowchatst=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]e=&amp;gt;end: End:&amp;gt;http://www.google.comop1=&amp;gt;operation: My Operation|pastop2=&amp;gt;operation: Stuff|currentsub1=&amp;gt;subrouti">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-05T08:52:50.449Z">
+<meta property="og:updated_time" content="2019-12-05T09:59:02.680Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ios Universal Links 探究">
-<meta name="twitter:description" content="1234567st=&amp;gt;start: 开始op=&amp;gt;operation: My Operationcond=&amp;gt;condition: Yes or No?e=&amp;gt;endst-&amp;gt;op-&amp;gt;condcond(yes)-&amp;gt;econd(no)-&amp;gt;op">
+<meta name="twitter:description" content="···mermaidflowchatst=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]e=&amp;gt;end: End:&amp;gt;http://www.google.comop1=&amp;gt;operation: My Operation|pastop2=&amp;gt;operation: Stuff|currentsub1=&amp;gt;subrouti">
 
 
 
@@ -305,8 +305,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web前端/" itemprop="url" rel="index">
-                    <span itemprop="name">web前端</span>
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
                   </a>
                 </span>
 
@@ -342,8 +342,7 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-
+        <p>···mermaid<br>flowchat<br>st=&gt;start: Start|past:&gt;<a href="http://www.google.com[blank]" target="_blank" rel="noopener">http://www.google.com[blank]</a><br>e=&gt;end: End:&gt;<a href="http://www.google.com" target="_blank" rel="noopener">http://www.google.com</a><br>op1=&gt;operation: My Operation|past<br>op2=&gt;operation: Stuff|current<br>sub1=&gt;subroutine: My Subroutine|invalid<br>cond=&gt;condition: Yes<br>or No?|approved:&gt;<a href="http://www.google.com" target="_blank" rel="noopener">http://www.google.com</a><br>c2=&gt;condition: Good idea|rejected<br>io=&gt;inputoutput: catch something…|request<br>st-&gt;op1(right)-&gt;cond<br>cond(yes, right)-&gt;c2<br>cond(no)-&gt;sub1(left)-&gt;op1<br>c2(yes)-&gt;io-&gt;e<br>c2(no)-&gt;op2-&gt;e<br>···<br>f</p>
 
       
     </div>
@@ -457,7 +456,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -526,6 +525,14 @@
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
+
+
+  <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
 
 
         
